@@ -2,6 +2,7 @@
   "name": "react_app_api",
   "version": "0.1.0",
   "private": true,
+  "proxy":"https://api.pandascore.co/",
   "dependencies": {
     "axios": "^0.24.0",
     "react": "^17.0.2",
