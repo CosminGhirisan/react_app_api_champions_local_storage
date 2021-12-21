@@ -16,7 +16,7 @@ export const loadChampions = (page) => async (dispatch) => {
 }
 
 export const loadSearchedChampions = (searchTerm) => async (dispatch) => {
-   const championsData = await axios.get(`https://api.pandascore.co/lol/champions?search[name]=${searchTerm}&token=ry749XTxEzbKVGLCSbLEFW2XQeofu0jH3SzRBd5OKUOgIzxuXRY`);
+   const championsData = await axios.get(`https://cors-anywhere.herokuapp.com/api.pandascore.co/lol/champions?search[name]=${searchTerm}&token=ry749XTxEzbKVGLCSbLEFW2XQeofu0jH3SzRBd5OKUOgIzxuXRY`);
    dispatch({
       type: "FETCH_CHAMPS",
       payload: {
